@@ -1,0 +1,39 @@
+Copyright Maria Enescu 311CAa 2022-2023
+
+Problema MY_OCTAVE:
+
+Programul conține o structura de date, 22 functii auxiliare folosite pentru
+implementarea temei si functia main.
+Descrierea structurii și a tuturor funcțiilor auxiliare implementate se găsesc
+în antetele funcțiilor din fișierul my_octave.c 
+
+În funcția main se citește comanda sub forma unui caracter și în funcție de
+valoarea acestuia se executa comenzile corespunzătoare după cum urmează:
+- Comanda L - apelează funcția functie_L pentru încărcarea în memorie a unei
+matrice;
+- Comanda D - apelează funcția functie_D pentru determinarea dimensiunilor unei
+matrice;
+- Comanda P - apelează funcția functie_P pentru afișarea unei matrice;
+- Comanda C - apelează funcția functie_C pentru redimensionarea unei matrice;
+- Comanda M - apelează funcția functie_M pentru înmulțirea a doua matrici;
+- Comanda O - apelează funcția functie_O pentru sortarea matricilor;
+- Comanda T - apelează funcția functie_T pentru realizarea transpunerii unei
+matrice;
+- Comanda R - apelează funcția functie_R pentru ridicarea unei matrice la 
+o putere în timp logaritmic;
+- Comanda S - apelează funcția functie_S pentru înmulțirea a doua matrici
+folosind algoritmul lui Strassen;
+- Comanda F - pentru eliberarea memoriei unei matrice
+- Comanda Q - pentru eliberarea tuturor resurselor și finalizarea
+aplicatiei;
+- Orice alta comanda va fi semnalata ca eroare sub forma unui mesaj
+corespunzator;
+
+După executia unei comenzi se verifica daca este nevoie de o redimensionare
+a vectorului de matrici (se verifica dacă numărul de elemente din vectorul v
+ este egal cu numărul n alocat inițial) și în cazul în care s-a ajuns la final
+se face o noua realocare pentru încă 10 elemente.
+
+De fiecare data când se apelează cu succes comanda F (eliminare matrice din
+vector) se încearcă redimensionarea vectorului de matrici dacă numărul de
+matrici din vector este la jumatatea elementelor alocate.
